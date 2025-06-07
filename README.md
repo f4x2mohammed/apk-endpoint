@@ -25,3 +25,5 @@ sudo apt update
 sudo apt install apktool python3-pip -y
 pip install androguard
 
+⚙️ Usage
+python3 apk-endpoint.py -a app.apk -o urls.txt
