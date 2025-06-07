@@ -20,16 +20,15 @@
 
 Install required tools:
 
-```bash
 sudo apt update
 sudo apt install apktool python3-pip -y
-pip install androguard```
+pip install androguard
 
-⚙️ Usage Examples
+## ⚙️ Usage Examples
 Extract URLs from an APK and save to a file:
 python3 apk-endpoint.py -a /path/to/app.apk -o extracted_urls.txt
 
-👨‍💻 Author
+## 👨‍💻 Author
 Developed with ❤️ by f4x2mohammed
 
 
