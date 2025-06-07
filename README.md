@@ -1,38 +1,44 @@
-# 🔍 APK Endpoint Extractor
+# APK Endpoint Extractor
 
-**apk-endpoint.py** is a lightweight, intelligent tool designed to extract external endpoints (URLs) from Android APK files. It combines static analysis using `apktool` and `androguard`, with smart filtering to give you valuable bug bounty and security insights.
+**apk-endpoint.py** is a lightweight, intelligent Python tool designed to extract external endpoints (URLs) from Android APK files. It uses static analysis by decompiling APKs with `apktool` and performs smart keyword-based extraction from the source files.
 
 ---
 
 ## 🚀 Features
 
-- 🧠 Smart static analysis with AI-enhanced string search
-- 🛠️ Decompile APKs using apktool
-- 📦 Extract from smali, XML, JSON, JS, HTML, and more
-- 📚 Analyze DEX bytecode with Androguard
-- 🔒 Filters out private IPs and localhost links
-- 🧼 Automatically cleans up temporary files
-- 💡 CLI-only – fast, focused, and minimal
+- Decompile APK files using `apktool`
+- Extract URLs from various files inside the APK (XML, smali, JSON, JS, etc.)
+- Smart extraction based on common keywords like `api`, `endpoint`, `base_url`, `host`, `url`, and `server`
+- Option to keep or delete the temporary decompiled folder
+- Easy CLI interface
 
 ---
 
 ## 📦 Requirements
 
-Install required tools:
+- Python 3.x
+- `apktool` installed and available in your system PATH
+- Python package: `argparse` (usually included in standard Python)
+- Linux or Windows environment with Python and apktool installed
+
+---
+
+## ⚙️ Installation
+
+1. Install apktool:
 
 ```bash
-sudo apt update
-sudo apt install apktool python3-pip -y
-pip install androguard
+sudo apt update && sudo apt install apktool -y
 ```
 
-## ⚙️ Usage Examples
+💻 Usage
+Command:
 ```bash
-Extract URLs from an APK and save to a file:
 python3 apk-endpoint.py -a /path/to/app.apk -o extracted_urls.txt
 ```
 
-## 👨‍💻 Author
-Developed by f4x2mohammed
+👨‍💻 Author
+Developed with ❤️ by f4x2mohammed
+
 
 
