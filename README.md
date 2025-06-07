@@ -23,7 +23,7 @@ Install required tools:
 ```bash
 sudo apt update
 sudo apt install apktool python3-pip -y
-pip install androguard
+pip install androguard```
 
 ⚙️ Usage Examples
 Extract URLs from an APK and save to a file:
